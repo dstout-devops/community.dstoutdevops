@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Ansible Dev Container",
+	"image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+	"runArgs": [
+		"--privileged"
+	],
+	"updateRemoteUserUID": true,
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.ansible"
+			]
+		}
+	}
+}
